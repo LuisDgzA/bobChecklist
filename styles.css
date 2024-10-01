@@ -58,7 +58,7 @@ body {
     cursor: pointer;
 
     background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0px 5px 15px 3px rgba(255, 255, 255, 0.8);
 }
 
 .item img::after {
@@ -105,7 +105,7 @@ body {
 
 .item.owned {
     border: 1px solid rgb(69, 219, 69);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 20px 30px rgba(69, 219, 69, 1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), inset 0px 10px 15px rgba(69, 219, 69, 1);
     img:nth-child(2) {
         opacity: 0;
     }
@@ -152,9 +152,13 @@ body {
     .item {
         width: 11rem;
         height: 11rem;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 0.8);
     }
     .item-collecion-wrapper {
         gap: 3rem;
+    }
+    .item.owned {
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 20px 30px rgba(69, 219, 69, 1);
     }
 }
 
