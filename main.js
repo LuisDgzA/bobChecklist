@@ -1,103 +1,103 @@
 const collectables = [
     {
         id: 1,
-        src: 'bob_arcoiris_negro.png',
-        srcColor: 'bob_arcoiris_color.png',
+        src: 'bob_arcoiris_negro',
+        srcColor: 'bob_arcoiris_color',
     },
     {
         id: 2,
-        src: 'calamardo_negro.png',
-        srcColor: 'calamardo_color.png',
+        src: 'calamardo_negro',
+        srcColor: 'calamardo_color',
     },
     {
         id: 3,
-        src: 'don_cangrejo_negro.png',
-        srcColor: 'don_cangrejo_color.png',
+        src: 'don_cangrejo_negro',
+        srcColor: 'don_cangrejo_color',
     },
     {
         id: 4,
-        src: 'gary_negro.png',
-        srcColor: 'gary_color.png',
+        src: 'gary_negro',
+        srcColor: 'gary_color',
     },
     {
         id: 5,
-        src: 'plankton_negro.png',
-        srcColor: 'plankton_color.png',
+        src: 'plankton_negro',
+        srcColor: 'plankton_color',
     },
     {
         id: 6,
-        src: 'patricio_barril_negro.png',
-        srcColor: 'patricio_barril_color.png',
+        src: 'patricio_barril_negro',
+        srcColor: 'patricio_barril_color',
     },
     {
         id: 7,
-        src: 'don_cangrejo_violin_negro.png',
-        srcColor: 'don_cangrejo_violin_color.png',
+        src: 'don_cangrejo_violin_negro',
+        srcColor: 'don_cangrejo_violin_color',
     },
     {
         id: 8,
-        src: 'policia_negro.png',
-        srcColor: 'policia_color.png',
+        src: 'policia_negro',
+        srcColor: 'policia_color',
     },
     {
         id: 9,
-        src: 'arenita_super_negro.png',
-        srcColor: 'arenita_super_color.png',
+        src: 'arenita_super_negro',
+        srcColor: 'arenita_super_color',
     },
     {
         id: 10,
-        src: 'patricio_super_negro.png',
-        srcColor: 'patricio_super_color.png',
+        src: 'patricio_super_negro',
+        srcColor: 'patricio_super_color',
     },
     {
         id: 11,
-        src: 'sirenoman_negro.png',
-        srcColor: 'sirenoman_color.png',
+        src: 'sirenoman_negro',
+        srcColor: 'sirenoman_color',
     },
     {
         id: 12,
-        src: 'chico_perseve_negro.png',
-        srcColor: 'chico_perseve_color.png',
+        src: 'chico_perseve_negro',
+        srcColor: 'chico_perseve_color',
     },
     {
         id: 13,
-        src: 'carrerin_negro.png',
-        srcColor: 'carrerin_color.png',
+        src: 'carrerin_negro',
+        srcColor: 'carrerin_color',
     },
     {
         id: 14,
-        src: 'cracatoa_negro.png',
-        srcColor: 'cracatoa_color.png',
+        src: 'cracatoa_negro',
+        srcColor: 'cracatoa_color',
     },
     {
         id: 15,
-        src: 'patricio_rapero_negro.png',
-        srcColor: 'patricio_rapero_color.png',
+        src: 'patricio_rapero_negro',
+        srcColor: 'patricio_rapero_color',
     },
     {
         id: 16,
-        src: 'bob_rapero_negro.png',
-        srcColor: 'bob_rapero_color.png',
+        src: 'bob_rapero_negro',
+        srcColor: 'bob_rapero_color',
     },
     {
         id: 17,
-        src: 'arenita_negro.png',
-        srcColor: 'arenita_color.png',
+        src: 'arenita_negro',
+        srcColor: 'arenita_color',
     },
     {
         id: 18,
-        src: 'bob_festejo_negro.png',
-        srcColor: 'bob_festejo_color.png',
+        src: 'bob_festejo_negro',
+        srcColor: 'bob_festejo_color',
     },
     {
         id: 19,
-        src: 'perlita_negro.png',
-        srcColor: 'perlita_color.png',
+        src: 'perlita_negro',
+        srcColor: 'perlita_color',
     },
     {
         id: 20,
-        src: 'arenita_hibernacion_negro.png',
-        srcColor: 'arenita_hibernacion_color.png',
+        src: 'arenita_hibernacion_negro',
+        srcColor: 'arenita_hibernacion_color',
     },
 ]
 
@@ -111,8 +111,8 @@ collectables.forEach((collectable,index) => {
     let isOwned = idsOwned.includes(collectable.id);
     ItemsWrapper.insertAdjacentHTML('beforeend',
         `<div class="item ${isOwned ? 'owned' : '' }" data-id="${collectable.id}">
-            <img class="img-color" src="./assets/img/${collectable.srcColor}" alt="itemColor${collectable.id}">
-            <img class="img-negro" src="./assets/img/${collectable.src}" alt="item${collectable.id}">
+            <img class="img-color" src="./assets/img/${collectable.srcColor}.webp" alt="itemColor${collectable.id}">
+            <img class="img-negro" src="./assets/img/${collectable.src}.webp" alt="item${collectable.id}">
         </div>`)
 })
 
