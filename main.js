@@ -105,7 +105,7 @@ let idsOwned = localStorage.getItem('owned') ? JSON.parse(localStorage.getItem('
 
 console.log(idsOwned)
 
-const ItemsWrapper = document.querySelector('.item-collecion-wrapper.1')
+const ItemsWrapper = document.querySelector('.1')
 
 collectables.forEach((collectable,index) => {
     let isOwned = idsOwned.includes(collectable.id);
