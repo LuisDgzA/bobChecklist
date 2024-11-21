@@ -11,7 +11,7 @@
 
 body {
     /* background: linear-gradient(135deg, #9ee3c4 0%, #7beceb 50%, #66b8dc 100% ); */
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
     width: 100%;
     min-height: 100svh;
@@ -50,8 +50,8 @@ body {
 }
 
 .item {
-    width: 3.7rem;
-    height: 3.7rem;
+    width: 3.9rem;
+    height: 3.9rem;
     display: grid;
     place-items: center;
     background: rgba(255, 255, 255, 0.3);
