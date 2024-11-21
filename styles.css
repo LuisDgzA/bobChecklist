@@ -30,6 +30,10 @@ body {
     text-align: center;
 }
 
+img {
+    user-select: none;
+}
+
 .title {
 
     /* font-size: 72px; */
