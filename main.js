@@ -75,27 +75,27 @@ const collectables = [
         srcColor: 'patricio_rapero_color.png',
     },
     {
-        id: 15,
+        id: 16,
         src: 'bob_rapero_negro.png',
         srcColor: 'bob_rapero_color.png',
     },
     {
-        id: 16,
+        id: 17,
         src: 'arenita_negro.png',
         srcColor: 'arenita_color.png',
     },
     {
-        id: 17,
+        id: 18,
         src: 'bob_festejo_negro.png',
         srcColor: 'bob_festejo_color.png',
     },
     {
-        id: 18,
+        id: 19,
         src: 'perlita_negro.png',
         srcColor: 'perlita_color.png',
     },
     {
-        id: 18,
+        id: 20,
         src: 'arenita_hibernacion_negro.png',
         srcColor: 'arenita_hibernacion_color.png',
     },
@@ -105,7 +105,7 @@ let idsOwned = localStorage.getItem('owned') ? JSON.parse(localStorage.getItem('
 
 console.log(idsOwned)
 
-const ItemsWrapper = document.querySelector('.item-collecion-wrapper')
+const ItemsWrapper = document.querySelector('.item-collecion-wrapper.1')
 
 collectables.forEach((collectable,index) => {
     let isOwned = idsOwned.includes(collectable.id);
