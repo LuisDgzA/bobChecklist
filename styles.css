@@ -37,12 +37,14 @@ img {
 .title {
 
     /* font-size: 72px; */
-    background: -webkit-linear-gradient(#ffda3c, #fd781b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: clamp(1rem, 2.5vw, 3rem);    ;
+    /* background: -webkit-linear-gradient(#ffda3c, #fd781b); */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #fd781b;
+    font-size: clamp(1rem, 2.5vw, 3rem);
     font-weight: 900;
     margin-bottom: 2rem;
+    text-shadow: 2px 2px 2px black;
 }
 
 .item-collecion-wrapper {
@@ -124,12 +126,22 @@ img {
 
 
 .item img {
-    width: 60%;
+    width: 68%;
     object-fit: contain;
-    height: 60%;
+    height: 68%;
     position: absolute;
     filter: grayscale(1);
     /* filter: drop-shadow(0 0 6px white) drop-shadow(0 0 15px white) drop-shadow(0 0 30px white); */
+}
+
+.madeby{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p{
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 @media (width >=576px) {

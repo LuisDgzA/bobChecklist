@@ -160,6 +160,60 @@ const collectablesTras = [
     
 ]
 
+const collectablesLLa = [
+    {
+        id: 201,
+        src: 'bob_tras_negro',
+        srcColor: 'c_bob',
+    },
+    {
+        id: 202,
+        src: 'plankton_tras_negro',
+        srcColor: 'c_arenita',
+    },
+    {
+        id: 203,
+        src: 'don_cangrejo_tras_negro',
+        srcColor: 'c_bob_pat_gary',
+    },
+    {
+        id: 204,
+        src: 'anchoa_tras_negro',
+        srcColor: 'c_calamardo',
+    },
+    {
+        id: 205,
+        src: 'perlita_tras_negro',
+        srcColor: 'c_don_cangrejo',
+    },
+    {
+        id: 206,
+        src: 'cala_tras_negro',
+        srcColor: 'c_imaginacion',
+    },
+    {
+        id: 207,
+        src: 'holandes_tras_negro',
+        srcColor: 'c_patricio',
+    },
+    {
+        id: 208,
+        src: 'gary_tras_negro',
+        srcColor: 'c_perlita',
+    },
+    {
+        id: 209,
+        src: 'abuela_tras_negro',
+        srcColor: 'c_plankton',
+    },
+    {
+        id: 210,
+        src: 'patricio_tras_negro',
+        srcColor: 'c_todos',
+    },
+    
+]
+
 let idsOwned = localStorage.getItem('owned') ? JSON.parse(localStorage.getItem('owned')) : [];
 
 console.log(idsOwned)
@@ -180,6 +234,17 @@ const ItemsWrapper2 = document.querySelector('.collection-2')
 collectablesTras.forEach((collectable,index) => {
     let isOwned = idsOwned.includes(collectable.id);
     ItemsWrapper2.insertAdjacentHTML('beforeend',
+        `<div class="item ${isOwned ? 'owned' : '' }" data-id="${collectable.id}">
+            <img class="img-color" src="./assets/img/${collectable.srcColor}.webp" alt="itemColor${collectable.id}">
+            
+        </div>`)
+})
+
+const ItemsWrapper3 = document.querySelector('.collection-3')
+
+collectablesLLa.forEach((collectable,index) => {
+    let isOwned = idsOwned.includes(collectable.id);
+    ItemsWrapper3.insertAdjacentHTML('beforeend',
         `<div class="item ${isOwned ? 'owned' : '' }" data-id="${collectable.id}">
             <img class="img-color" src="./assets/img/${collectable.srcColor}.webp" alt="itemColor${collectable.id}">
             
