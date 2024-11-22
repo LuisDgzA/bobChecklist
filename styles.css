@@ -11,7 +11,7 @@
 
 body {
     /* background: linear-gradient(135deg, #9ee3c4 0%, #7beceb 50%, #66b8dc 100% ); */
-    padding-top: 2rem;
+    padding-top: 1.4rem;
     padding-bottom: 5rem;
     width: 100%;
     min-height: 100svh;
@@ -52,7 +52,7 @@ img {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 0.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
 }
 
 .item {
