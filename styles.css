@@ -59,9 +59,8 @@ img {
     display: grid;
     place-items: center;
     background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(2.5px);
-    -webkit-backdrop-filter: blur(2.5px);
     cursor: pointer;
+    position: relative;
 
     background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0px 5px 15px 3px rgba(255, 255, 255, 0.8);
@@ -113,9 +112,9 @@ img {
     border: 1px solid rgb(69, 219, 69);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), inset 0px 10px 15px rgba(69, 219, 69, 1);
 
-    img:nth-child(2) {
+    /* img:nth-child(2) {
         opacity: 0;
-    }
+    } */
 
     .img-color {
         filter: drop-shadow(0 0 2px #000);
@@ -129,6 +128,7 @@ img {
     object-fit: contain;
     height: 60%;
     position: absolute;
+    filter: grayscale(1);
     /* filter: drop-shadow(0 0 6px white) drop-shadow(0 0 15px white) drop-shadow(0 0 30px white); */
 }
 

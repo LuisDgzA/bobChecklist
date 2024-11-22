@@ -99,6 +99,65 @@ const collectables = [
         src: 'arenita_hibernacion_negro',
         srcColor: 'arenita_hibernacion_color',
     },
+    {
+        id: 21,
+        src: 'calamardo_guapo_negro',
+        srcColor: 'calamardo_guapo_color',
+    },
+]
+
+const collectablesTras = [
+    {
+        id: 101,
+        src: 'bob_tras_negro',
+        srcColor: 'bob_tras_color',
+    },
+    {
+        id: 102,
+        src: 'plankton_tras_negro',
+        srcColor: 'plankton_tras_color',
+    },
+    {
+        id: 103,
+        src: 'don_cangrejo_tras_negro',
+        srcColor: 'don_cangrejo_tras_color',
+    },
+    {
+        id: 104,
+        src: 'anchoa_tras_negro',
+        srcColor: 'anchoa_tras_color',
+    },
+    {
+        id: 105,
+        src: 'perlita_tras_negro',
+        srcColor: 'perlita_tras_color',
+    },
+    {
+        id: 106,
+        src: 'cala_tras_negro',
+        srcColor: 'cala_tras_color',
+    },
+    {
+        id: 107,
+        src: 'holandes_tras_negro',
+        srcColor: 'holandes_tras_color',
+    },
+    {
+        id: 108,
+        src: 'gary_tras_negro',
+        srcColor: 'gary_tras_color',
+    },
+    {
+        id: 109,
+        src: 'abuela_tras_negro',
+        srcColor: 'abuela_tras_color',
+    },
+    {
+        id: 110,
+        src: 'patricio_tras_negro',
+        srcColor: 'patricio_tras_color',
+    },
+    
 ]
 
 let idsOwned = localStorage.getItem('owned') ? JSON.parse(localStorage.getItem('owned')) : [];
@@ -112,7 +171,18 @@ collectables.forEach((collectable,index) => {
     ItemsWrapper.insertAdjacentHTML('beforeend',
         `<div class="item ${isOwned ? 'owned' : '' }" data-id="${collectable.id}">
             <img class="img-color" src="./assets/img/${collectable.srcColor}.webp" alt="itemColor${collectable.id}">
-            <img class="img-negro" src="./assets/img/${collectable.src}.webp" alt="item${collectable.id}">
+            
+        </div>`)
+})
+
+const ItemsWrapper2 = document.querySelector('.collection-2')
+
+collectablesTras.forEach((collectable,index) => {
+    let isOwned = idsOwned.includes(collectable.id);
+    ItemsWrapper2.insertAdjacentHTML('beforeend',
+        `<div class="item ${isOwned ? 'owned' : '' }" data-id="${collectable.id}">
+            <img class="img-color" src="./assets/img/${collectable.srcColor}.webp" alt="itemColor${collectable.id}">
+            
         </div>`)
 })
 
