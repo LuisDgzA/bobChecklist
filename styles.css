@@ -19,7 +19,7 @@ body {
     background-image: linear-gradient(180deg, rgba(141, 244, 194, 0.8) 0%, rgba(46, 152, 209, 0.8) 100%), url('./assets/img/fondo.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .container {
