@@ -55,6 +55,14 @@ img {
     margin-bottom: 1.4rem;
 }
 
+.imagen-fondo{
+    width: 70%;
+    height: 70%;
+    background: var(--bgimg) center center no-repeat;
+    background-size: contain;
+    filter: grayscale(1);
+}
+
 .item {
     width: 3.9rem;
     height: 3.9rem;
@@ -118,7 +126,10 @@ img {
         opacity: 0;
     } */
 
-    .img-color {
+    /* .img-color {
+        filter: drop-shadow(0 0 2px #000);
+    } */
+    .imagen-fondo {
         filter: drop-shadow(0 0 2px #000);
     }
 }
