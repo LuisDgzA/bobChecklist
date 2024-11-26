@@ -214,6 +214,55 @@ const collectablesLLa = [
     
 ]
 
+const collectablesCaps = [
+    {
+        id: 301,
+        src: 'bob_tras_negro',
+        srcColor: 'cap_calamardo_color',
+    },
+    {
+        id: 302,
+        src: 'plankton_tras_negro',
+        srcColor: 'cap_friends',
+    },
+    {
+        id: 303,
+        src: 'don_cangrejo_tras_negro',
+        srcColor: 'cap_carteles',
+    },
+    {
+        id: 304,
+        src: 'anchoa_tras_negro',
+        srcColor: 'cap_plankton',
+    },
+    {
+        id: 305,
+        src: 'perlita_tras_negro',
+        srcColor: 'cap_flotando',
+    },
+    {
+        id: 306,
+        src: 'cala_tras_negro',
+        srcColor: 'cap_girando',
+    },
+    {
+        id: 307,
+        src: 'holandes_tras_negro',
+        srcColor: 'cap_rainbow',
+    },
+    {
+        id: 308,
+        src: 'gary_tras_negro',
+        srcColor: 'cap_friends2',
+    },
+    {
+        id: 309,
+        src: 'abuela_tras_negro',
+        srcColor: 'cap_abajo',
+    },
+    
+]
+
 let idsOwned = localStorage.getItem('owned') ? JSON.parse(localStorage.getItem('owned')) : [];
 
 console.log(idsOwned)
@@ -245,6 +294,17 @@ const ItemsWrapper3 = document.querySelector('.collection-3')
 collectablesLLa.forEach((collectable,index) => {
     let isOwned = idsOwned.includes(collectable.id);
     ItemsWrapper3.insertAdjacentHTML('beforeend',
+        `<div class="item ${isOwned ? 'owned' : '' }" data-id="${collectable.id}">
+            <div class="imagen-fondo" style="--bgimg: url('./assets/img/${collectable.srcColor}.webp')"></div>
+            
+        </div>`)
+})
+
+const ItemsWrapper4 = document.querySelector('.collection-4')
+
+collectablesCaps.forEach((collectable,index) => {
+    let isOwned = idsOwned.includes(collectable.id);
+    ItemsWrapper4.insertAdjacentHTML('beforeend',
         `<div class="item ${isOwned ? 'owned' : '' }" data-id="${collectable.id}">
             <div class="imagen-fondo" style="--bgimg: url('./assets/img/${collectable.srcColor}.webp')"></div>
             
